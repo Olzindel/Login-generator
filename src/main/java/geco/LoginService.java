@@ -15,10 +15,12 @@ public class LoginService {
 
     /**
      * Construit un login service a partir de la liste des logins existants
+     *
      * @param loginsExistants
      */
     public LoginService(String[] loginsExistants) {
-        this.loginsExistants = new ArrayList<String>(Arrays.asList(loginsExistants));
+        this.loginsExistants =
+                new ArrayList<String>(Arrays.asList(loginsExistants));
         Collections.sort(this.loginsExistants);
     }
 
@@ -34,6 +36,7 @@ public class LoginService {
 
     /**
      * Ajoute un login a la liste des logins existants
+     *
      * @param login le login a ajouter
      */
     public void addLogin(String login) {
@@ -48,12 +51,12 @@ public class LoginService {
      */
     public List<String> findAllLoginsStartingWith(String pref) {
         ArrayList<String> loginsPrefixes = new ArrayList<String>();
-        for (String login: loginsExistants) {
+        for (String login : loginsExistants) {
             if (login.startsWith(pref)) {
                 loginsPrefixes.add(login);
             }
         }
-        return  loginsPrefixes;
+        return loginsPrefixes;
     }
 
     /**
@@ -62,6 +65,6 @@ public class LoginService {
      * @return la liste de tous les logins
      */
     public List<String> findAllLogins() {
-        return  loginsExistants;
+        return loginsExistants;
     }
 }
