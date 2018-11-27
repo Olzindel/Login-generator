@@ -16,7 +16,7 @@ public class LoginService {
     /**
      * Construit un login service a partir de la liste des logins existants
      *
-     * @param loginsExistants
+     * @param loginsExistants les logins existants déjà
      */
     public LoginService(String[] loginsExistants) {
         this.loginsExistants =

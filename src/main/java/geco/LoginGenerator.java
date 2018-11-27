@@ -28,10 +28,10 @@ public class LoginGenerator {
      * incremente le doublon d'un indice. Ci dessous des
      * exemples :
      * <ul>
-     * <li>Paul Dupond -> PDUP </li>
-     * <li>Pierre Dupard -> PDUP1</li>
-     * <li>Jacques Durand -> JDUR</li>
-     * <li>Lionel R&eacute;gal -> LREG</li>
+     * <li>Paul Dupond : PDUP </li>
+     * <li>Pierre Dupard : PDUP1</li>
+     * <li>Jacques Durand : JDUR</li>
+     * <li>Lionel R&eacute;gal : LREG</li>
      * </ul>
      *
      * @param nom    le nom
